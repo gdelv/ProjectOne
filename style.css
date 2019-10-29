@@ -7,7 +7,7 @@ html {
 /* nav container */
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 50px;
     background-color: rgba(169, 169, 169, 0.144);
     padding: 20px 0px;
@@ -18,24 +18,37 @@ nav {
     width: 100px;
     animation: spin 4s linear infinite;
     transition: transform 1s;
+    margin: 20px 0px;
+
+}
+
+.sun {
+    height: 200px;
+    width: 200px;
+    margin: -30px 0px;
+    transition: transform 1s;
 
 }
 div {
     background-color: rgba(169, 169, 169, 0.144);
+    margin: 20px;
     
 }
 a {
-    border: 3px solid white;
-    color: white;
+    border: 2px solid black;
+    color: rgb(26, 253, 147);
     background: dodgerblue;
     font-size: 35px;
     text-decoration: none;
     transition: transform 1s;
     position: absolute;
     box-shadow: 3px 5px gray;
+    padding:10px;
     
 }
 
+
+/* main container */
 main {
     background-color: rgba(169, 169, 169, 0.144);
     display: flex;
@@ -44,18 +57,44 @@ main {
     box-shadow: 5px 10px gray;
     padding: 20px;
 }
+.boxes {
+    background: rgba(169, 169, 169, 0.5);
+    margin: 20px;
+}
 
+/* letter styling */
+h2 {
+    margin: 10px;
+    font-size: 40px;
+}
+p {
+    margin: 10px;
+    font-size: 30px;
+ }
 
+ /* footer */
 
-
+ footer {
+     display: flex;
+     margin: 20px 50%;
+ }
+ .windmill {
+    height: 200px;
+    width: 200px;
+ }
 
 
 /* animations */
 .globe:hover {
     transform: scale(1.5);
 }
+.sun:hover {
+    transform: scale(1.3);
+}
 
 a:hover {
+    background:rgb(70, 233, 157);
+    color: dodgerblue;
     background-image: url(/images/teamhover.jpg);
 }
 
