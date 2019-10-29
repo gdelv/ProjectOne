@@ -1,6 +1,6 @@
 
 html {
-    background-color: darkgrey;
+    background-color: white ;
 }
 
 
@@ -9,6 +9,7 @@ nav {
     display: flex;
     justify-content: space-around;
     margin: 50px;
+    background-color: rgba(169, 169, 169, 0.144);
 }
 .globe {
     height: 100px;
